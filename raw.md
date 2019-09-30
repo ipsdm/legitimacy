@@ -29,3 +29,9 @@ lessened. - which suggests that the medium for engaging in the discussion must
 be mandated - because we can no effective medium to discuss where the
 discussion should be happening (edited) 
 
+hmm… I’m not sure you’ve grok’d my earlier point. I’ve expressed that it’s
+simply impossible to hold a balanced conversation with this many people outside
+of a mandated communication platform. We could mandate a communication
+platform, and then on that platform come to the consensus that we should should
+change platforms… that’s definitely a real possibility
+
