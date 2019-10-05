@@ -1,20 +1,15 @@
 # Voting Power
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+Ability to Choose Weights For Categories
 
-Ability to Choose Weights 
+| From      | Member A   | Member B  | Member C  | Member D  |
+| ----------|:----------:| ---------:| ---------:| ---------:|
+| Member A  | 1          | 2         | 2         | 2         |
+| Member B  | 1          | 2         | 2         | 2         |
+| Member D  | 1          | 2         | 2         | 2         |
+| Member C  | 1          | 2         | 2         | 2         |
 
-         A  B  C   D   E   ... 
-Member A 
-Member B
-Member C
-Member D
-Member E
-... 
+...
 
 
 First Category
