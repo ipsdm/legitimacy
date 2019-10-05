@@ -1,26 +1,93 @@
-# Suggested Structure
+# Suggested structure
 
-The suggested structure should serve as sufficient for a wide range of organization sizes. 
-A variety of implementations should be considered based on the sizes of organizational structure. 
+The suggested structure should serve as sufficient for a wide range of
+organization sizes.  A variety of implementations should be considered based on
+the sizes of organizational structure. 
 
-The master state of the organization should be held ideally in 
-a single location, however replicated wherever possible.
-This said informal documentation can still acceptably be held outside
-of the core organizational state. 
+The master state of the organization should be held ideally in a single
+location, however replicated wherever possible.  This said informal
+documentation can still acceptably be held outside of the core organizational
+state. 
 
 The organizational state is broken down in the following ways: 
- - High-level directives 
- - Enforceable and explicit agreements based off of directives 
-   - Decision catagories (non-mutual exclusive) 
- - On-going activities 
- - Responsibilities / privledges of all members
- - 
-
-The following utilities should also be considered 
- - Rapid Polling
- - Voting
+ - high-level directives 
+ - enforceable and explicit agreements based off of directives 
+   - decision catagories (non-mutual exclusive) 
+ - on-going activities upheld by members 
+ - responsibilities / privledges per member 
 
 
+## Phase 1: Assessement 
+
+Implementing the suggested structure may prove to be difficult depending
+on what existing structures are in place. During the initialization phase
+a utility should be mandated and populated in an attempt to reflect the 
+organizations existing structures _and not_ in an attempt to reflect the 
+most ideal form of the organization. This process enables the utility to 
+"get it's feet off the ground" such that further conversations can be had
+which mature the organization to a more ideal state. 
+
+The following is the suggested initialization steps to be taken:
+ 1. Existing organization authority mandate the use of a single utitily which
+    meets all the requirements of a [legitamte coordination utility](TODO)
+(suggested utility provided in this document).  At this point this new
+structure should be declared as non-ratified.
+ 2. Existing organization leadership prepopulate tutorial information and
+    "loose" documentation within the utility
+ 2. Existing organization leadership consisely define all degrees of membership
+    within the organization, most importantly the list of all existing members
+must be tabulated with distinction documented as to whom is a "full" member or
+some form of partial membership. In this context full members are required to
+fully engage and arrive at consensus within this process, whereas non-full
+members, may not be required to participate.  
+ 2. All members perform tutorial exersices familiarizing themselves with the
+    mandated coordination utility
+ 3. Within this utiltiy, all members self-document all existing priveldges and
+    responsibilities currently held within the organization attempting to be as
+truthful and comprehensive as possible. At this point members should refrain
+from documenting what _they would like_ their privledges and responsibilities
+to be but instead only focus on what privedges and responsibilities they
+truthfully already hold within the organization.  
+ 4. Existing organization leadership populated a best approximation of the
+    ideal company suggested-directives, suggested-agreements, and
+suggested-activities. Note that all these items must be clearly labelled as
+suggested and not mandated.
+ 6. A table (dubbed "the matrix") should not be created which lists documents,
+    and their state of review from all the full members.
+ 5. All organization members should now review and add suggestions to all other
+    members self-documented privleges and responsibilities as well as suggested
+directives, agreements, and activities, for truthfullness as to closeness to
+approximation of the existing structure - again _not_ in attempt to hone in on
+what is most ideal, but only to attempt to approximate what the _existing_
+structures/heigharchies truthfully are. Once each member is satified with a
+document and all their questions/concerns have been addressed they should mark
+the document as "approved at version-XXX" within the matrix, where the
+"version-XXX" represents a version number or commit hash of the document. It is
+anticipated that several iterations may be required in order to arrive at a final
+state of consensus for all the most recent document versions. 
+
+ 
+## Phase 2: Ratification
+
+Congradulations, you've made it to Phase 2. At this point you've agreed on 
+what the state of the organization looks like whether we like how it looks or not. 
+Before ratifying the structure certian. 
+
+## Phase 3: Rectification
+
+Now that the existing structures have been succesfully documented and any
+ratification blockers eraticated, it is time to rectify the organization.  
+
+
+## Suggested further process
+
+The above suggested structure is a baseline structure which arbitrary further
+processes can be implemented within. Herein are further suggested processes which 
+will serve as a baseline 
+
+
+
+------------------------------------------------------
 
 ### Implementation on github
 
@@ -30,7 +97,7 @@ The breakdown is as follows:
  - organization state: - held in repository file structure
  - voting: 
 
-#### file structure
+#### File structure
 
 ```
  ./README.md                       // banner, overview text, hyperlinked table of contents 
@@ -58,6 +125,6 @@ The breakdown is as follows:
  ./Docs/                           // most docs should be referenced in Agreements.md
       Tutorials/                   // tutorials on how to interact with 
       Contracts/
-      Policies/                    // 
-           CODE_OF_CONDUCT.md      // how users ought to interact with eachother
+      Policies/                    
+           CODE_OF_CONDUCT.md      // how users ought to interact with each other
 ```
