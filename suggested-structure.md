@@ -71,7 +71,16 @@ state of consensus for all the most recent document versions.
 
 Congradulations, you've made it to Phase 2. At this point you've agreed on 
 what the state of the organization looks like whether we like how it looks or not. 
-Before ratifying the structure certian. 
+Before ratifying the structure voting powers should be initialized. The suggested voting
+power mechanism is as follows: 
+ 1. Existing leadership creates the initial list of decision making categories
+ 2. All members review and come to consensus on the category list, potentially 
+    adding or changing categories during this step. 
+ 3. All members rank other members confidence in other members capabilities to 
+    rank voting powers (meta voting power). When members feel unqualified 
+    to provide a ranking, ranking should simply not be provided. 
+ 4. All members rank all other members on their suggested weights per voting 
+    category where they feel confident to do so. 
 
 ## Phase 3: Rectification
 
