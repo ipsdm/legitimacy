@@ -35,3 +35,9 @@ of a mandated communication platform. We could mandate a communication
 platform, and then on that platform come to the consensus that we should should
 change platforms… that’s definitely a real possibility
 
+
+_____________________
+
+
+In this context acting with legitimacy is equivalent to acting out the actions of a 
+legitimized structure within its jurisdiction.

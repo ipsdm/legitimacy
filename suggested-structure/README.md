@@ -1,20 +1,20 @@
 # Suggested structure
 
 The suggested structure should serve as sufficient for a wide range of
-organization sizes.  A variety of implementations should be considered based on
+organization sizes. A variety of implementations should be considered based on
 the sizes of organizational structure. 
 
 The master state of the organization should be held ideally in a single
-location, however replicated wherever possible.  This said informal
+location, however replicated wherever possible. This said, informal
 documentation can still acceptably be held outside of the core organizational
 state. 
 
 The organizational state is broken down in the following ways: 
  - high-level directives 
  - enforceable and explicit agreements based off of directives 
-   - decision catagories (non-mutual exclusive) 
+   - decision categories (non-mutual exclusive) 
  - on-going activities upheld by members 
- - responsibilities / privledges per member 
+ - responsibilities / privileges per member 
 
 
 ## Phase 1: Assessement 
@@ -28,25 +28,25 @@ most ideal form of the organization. This process enables the utility to
 which mature the organization to a more ideal state. 
 
 The following is the suggested initialization steps to be taken:
- 1. Existing organization authority mandate the use of a single utitily which
+ 1. Existing organization authority mandate the use of a single utility which
     meets all the requirements of a [legitamte coordination utility](TODO)
 (suggested utility provided in this document).  At this point this new
 structure should be declared as non-ratified.
  2. Existing organization leadership prepopulate tutorial information and
     "loose" documentation within the utility
- 2. Existing organization leadership consisely define all degrees of membership
+ 2. Existing organization leadership concisely define all degrees of membership
     within the organization, most importantly the list of all existing members
 must be tabulated with distinction documented as to whom is a "full" member or
 some form of partial membership. In this context full members are required to
 fully engage and arrive at consensus within this process, whereas non-full
 members, may not be required to participate.  
- 2. All members perform tutorial exersices familiarizing themselves with the
+ 2. All members perform tutorial exercises familiarizing themselves with the
     mandated coordination utility
- 3. Within this utiltiy, all members self-document all existing priveldges and
+ 3. Within this utility, all members self-document all existing privileges and
     responsibilities currently held within the organization attempting to be as
 truthful and comprehensive as possible. At this point members should refrain
-from documenting what _they would like_ their privledges and responsibilities
-to be but instead only focus on what privedges and responsibilities they
+from documenting what _they would like_ their privileges and responsibilities
+to be but instead only focus on what privileges and responsibilities they
 truthfully already hold within the organization.  
  4. Existing organization leadership populated a best approximation of the
     ideal company suggested-directives, suggested-agreements, and
@@ -56,10 +56,10 @@ suggested and not mandated.
     and their state of review from all the full members.
  5. All organization members should now review and add suggestions to all other
     members self-documented privleges and responsibilities as well as suggested
-directives, agreements, and activities, for truthfullness as to closeness to
+directives, agreements, and activities, for truthfulness as to closeness to
 approximation of the existing structure - again _not_ in attempt to hone in on
 what is most ideal, but only to attempt to approximate what the _existing_
-structures/heigharchies truthfully are. Once each member is satified with a
+structures/hierarchies truthfully are. Once each member is satisfied with a
 document and all their questions/concerns have been addressed they should mark
 the document as "approved at version-XXX" within the matrix, where the
 "version-XXX" represents a version number or commit hash of the document. It is
@@ -69,7 +69,7 @@ state of consensus for all the most recent document versions.
  
 ## Phase 2: Ratification
 
-Congradulations, you've made it to Phase 2. At this point you've agreed on 
+Congratulations, you've made it to Phase 2. At this point you've agreed on 
 what the state of the organization looks like whether we like how it looks or not. 
 Before ratifying the structure voting powers should be initialized. The suggested voting
 power mechanism is as follows: 
@@ -84,8 +84,8 @@ power mechanism is as follows:
 
 ## Phase 3: Rectification
 
-Now that the existing structures have been succesfully documented and any
-ratification blockers eraticated, it is time to rectify the organization.  
+Now that the existing structures have been successfully documented and any
+ratification blockers eradicated, it is time to rectify the organization.  
 
 
 ## Suggested further process
@@ -109,31 +109,30 @@ The breakdown is as follows:
 #### File structure
 
 ```
- ./README.md                       // banner, overview text, hyperlinked table of contents 
- ./Directives.md                   // high level directives
- ./Agreements.md                   // agreements based off of directives and decisions
- ./Activities.md                   // list of all active functions which projects or the organization participates in
- ./Members/
-      Inactive/                    // Inactive members should still be kept on record
-      YourNameHere.md              // Active members 
-      YourFriendsName.md
-      ... 
- ./Decision-Records/               // Complete documentation of decisions made
-      GeneralDR_001.md             // General decisions which merit everyone's attention,  
-      GeneralDR_002.md             //   or decisions which belong equally to multiple categories 
-      ...
-      ExampleCategory1/            // Decisions pertaining only-to, or primarily-to a specific category
-           DR_001.md
-           DR_002.md
-           ...
-      ExampleCategory2/
-           DR_001.md
-           DR_002.md
-           ...
-      ... 
- ./Docs/                           // most docs should be referenced in Agreements.md
-      Tutorials/                   // tutorials on how to interact with 
-      Contracts/
-      Policies/                    
-           CODE_OF_CONDUCT.md      // how users ought to interact with each other
+├── README.md                      // banner, overview text, hyperlinked table of contents 
+├── Directives.md                  // high level directives
+├── Agreements.md                  // agreements based off of directives and decisions
+├── Activities.md                  // list of all active functions which projects or the organization participates in
+├── Members/
+│   ├── Inactive/                  // Inactive members should still be kept on record
+│   ├── YourNameHere.md            // Active members 
+│   └── YourFriendsName.md
+├── Decision-Records/              // Complete documentation of decisions made
+│   ├── GeneralDR_001.md           // General decisions which merit everyone's attention,  
+│   ├── GeneralDR_002.md           //   or decisions which belong equally to multiple categories 
+│   ├── ...
+│   ├── ExampleCategory1/          // Decisions pertaining only-to, or primarily-to a specific category
+│   │    ├── DR_001.md
+│   │    ├── DR_002.md
+│   │    └── ...
+│   │── ExampleCategory2/
+│   │   ├── DR_001.md
+│   │   ├── DR_002.md
+│   │   └── ...
+│   └── ... 
+└── Docs/                         // most docs should be referenced in Agreements.md
+    ├── Tutorials/                // tutorials on how to interact with 
+    ├── Contracts/
+    └── Policies/                    
+        └── CODE_OF_CONDUCT.md    // how users ought to interact with each other
 ```
