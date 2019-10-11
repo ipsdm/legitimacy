@@ -4,11 +4,11 @@
 
 #### Desired Changes
 
-## Privedges
+## Privileges
 
 #### Desired Changes
 
-## Atributes (Good and Bad) 
+## Attributes (Good and Bad) 
 
 ## Achievements
 
