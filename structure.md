@@ -1,10 +1,24 @@
-# Suggested Structure
+# Structure
+
+The suggested structure provided herein should serve as sufficient for a wide
+range of organization/group sizes. This file is broken down by the following
+subsections:
+ - [Platform](./structure.md#Platform) - Discussions surrounding platform
+   requirements for implementing the structure. 
+ - [State](./structure.md#State) - Outline of the minimum elements of the state
+   of the structure.  
+ - [Process](./structure.md#Process) - Tangible process for transitioning to
+   this structure. 
+
+Additionally, at the end of this file a discussion surrounding an example
+implementation on github is provided.
 
 ## Platform
 
-The suggested structure provided herein should serve as sufficient for a wide
-range of organization sizes. A variety of implementations of said structure
-should be considered based on the organization. 
+A variety of implementations of said structure should be considered based on
+the organization. Amending or modifying the provided structures to the specific
+needs of your organization is encouraged through the formation of new top-level
+[agreements](./structure.md#Agreements). 
 
 The master state of the organization should be held in a single location
 (however replicated wherever possible). This said, informal or inaffectual
@@ -21,12 +35,13 @@ following are the requirements for any platform chosen:
 
 ## State
 
-An organization's state should be broken down into approximately the following sections. 
+An organization's state should be broken down approximately into the following
+sections:
 
 ### Directives
 
-high-level directives of the organization. All agreements and decisions made should be 
-able to be referenced within the context of the directives. 
+high-level directives of the organization. All agreements and decisions made
+should be able to be referenced within the context of the directives. 
 
 ### Definitions
 
@@ -36,13 +51,14 @@ within the organization.
 
 ### Agreements
 
-Concisely worded agreements made by members of the organization to aid the
-progression of the company directives. Agreements should be enforceable within
-the organization. The agreements section need-not contain an exhaustive list of
-all decisions made within the company, but a list _of how_ decisions are made,
-and _of how_ process is changed. All agreements should be made by the consensus
-process (and not a majority vote process), any single disagreement on any
-element within the agreements
+Concisely worded statements agreed upon by all members of the organization to
+aid the progression of the company directives. Agreements should be enforceable
+within the organization. The agreements section need-not contain an exhaustive
+list of all decisions made within the company, but a list _of how_ decisions
+are made, and _of how_ process is changed. All agreements should be made via
+the [consensus process](./definitions.md#Consensus), any single
+disagreement on any element within any agreement is enough to bring that
+agreement into a state of [contention](./definitions.md#Contention). 
 
 ### Decision Records
 
@@ -56,7 +72,9 @@ Similar to an Architecture Decision Record (ADR), decision records provide
      made.  
  - Link
    - List references to other decisions records and agreements which form the
-     basis for this decision.
+     basis for this decision. This is especially important for indexing and
+     updating this decision when upstream agreements/decisions are modified or
+     overturned. 
  - New Agreements Formed
   - List any new agreements formed during the ratification of this decision.
  - Supplementary Information
@@ -66,9 +84,7 @@ Similar to an Architecture Decision Record (ADR), decision records provide
     - external references
     - etc.
 
----------------------------------------
-
-## Supplementary Information
+### Supplementary Information
 
 Non-mandatory section which could include
  - raw conversations/discussions
@@ -78,7 +94,9 @@ Non-mandatory section which could include
 
 
 ### Activities 
- - documentation of on-going activities upheld by members 
+An activity is an ongoing responsibility within an organization. 
+
+ocumentation of on-going activities upheld by members 
 
 
 ### Members
@@ -115,7 +133,7 @@ must be tabulated with distinction documented as to whom is a "full" member or
 some form of partial membership. In this context full members are required to
 fully engage and arrive at consensus within this process, whereas non-full
 members, may not be required to participate. This documentation should be added
-to the organization's [Definitions](./README.md#defitions). 
+to the organization's [Definitions](./structure.md#definitions). 
  2. All members perform tutorial exercises familiarizing themselves with the
     mandated coordination utility
  3. Within this utility, all members self-document all existing privileges and
@@ -176,7 +194,7 @@ will serve as a baseline
 ## Example implementation using github
 
 All described required functionality described in
-[Platform](./README.md#Platform) can be fulfilled as a part of a github
+[Platform](./structure.md#Platform) can be fulfilled as a part of a github
 repository:
  - clear version history, 
    - git version history on repository

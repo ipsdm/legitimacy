@@ -24,7 +24,7 @@ If anything at all seems a bit off off why not join the discussion by either:
 This repository is separated out into the following main sections: 
  - [Concept](./concept.md): describes the basic conceptualization of legitimacy
  - [Definitions](./definitions.md): listed definitions for reference
- - [Suggested Structure](./suggested-structure/): suggested structure and implementation path
+ - [Structure](./structure.md/): suggested structure and implementation path
 
 ## Lifespan
 

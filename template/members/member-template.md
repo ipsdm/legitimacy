@@ -1,4 +1,4 @@
-# Member Name
+# {Member-Name}
 
 ## Responsibilities
 
