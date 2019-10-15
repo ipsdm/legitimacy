@@ -1,6 +1,5 @@
 # Decision {DR-NUMBER}: {TITLE}
 
-
 State the decision as concisely as possible here.
 
 ## By Authority Of

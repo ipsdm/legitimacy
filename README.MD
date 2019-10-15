@@ -13,7 +13,7 @@ to not use the processes described in this repo is to "not have legitimacy".
 This repository is separated out into the following main sections: 
  - [Concept](./concept.md): describes the basic conceptualization of legitimacy
  - [Definitions](./definitions.md): listed definitions for reference
- - [Structure](./structure.md/): suggested structure and implementation path
+ - [Structure](./structure.md/): suggested structure and instantiation path
 
 ## Contributing
 

@@ -122,6 +122,7 @@ should consist of an exhaustive list of members':
      - Desired Changes
    - Attributes
    - Achievements
+   - Contracts
 
 Modification of members cards must be done with the consent of that members,
 but should not exclusively controlled by that member. For instance, in most
@@ -139,11 +140,14 @@ a week to several years depending on the size of the organization.
 
 ### Phase 1: Assessment 
 
-During the initialization phase a utility should be mandated and populated in
-an attempt to reflect the organizations existing structures _and not_ in an
-attempt to reflect the most ideal form of the organization. This process
-enables the utility to "get it's feet off the ground" such that further
-conversations can be had which mature the organization to a more ideal state. 
+During the initialization phase a utility should be agreed upon through verbal
+consensus or mandated in a [moment of
+autocracy](./definitions#Moment-of-autocracy). The utility should then be
+collectively populated in an attempt to reflect the organizations existing
+structures _and not_ in an attempt to reflect the most ideal form of the
+organization. This process enables the utility to "get it's feet off the
+ground" such that further conversations can be had which mature the
+organization to a more ideal state. 
 
 The following is the suggested initialization steps to be taken:
  1. Existing organization authority mandate the use of a single utility which
@@ -274,32 +278,32 @@ repository to represent the organizational state:
 ```
 ./
 ├── README.md                      // banner, overview text, hyperlinked table of contents 
-├── Directives.md                  // high level directives
-├── Agreements.md                  // agreements based off of directives and decisions
-├── Definitions.md                 // list of agreed upon definitions relavent to the organization structure
-├── Activities.md                  // list of all active functions which projects or the organization participates in
-├── Members/
-│   ├── Inactive/                  // Inactive members should still be kept on record
-│   ├── YourNameHere.md            // Active members 
-│   └── YourFriendsName.md
-├── Decision-Records/              // Complete documentation of decisions made
-│   ├── GeneralDR_001.md           // General decisions which merit everyone's attention,  
-│   ├── GeneralDR_002.md           //   or decisions which belong equally to multiple categories 
+├── directives.md                  // high level directives
+├── agreements.md                  // agreements based off of directives and decisions
+├── definitions.md                 // list of agreed upon definitions relavent to the organization structure
+├── activities.md                  // list of all active functions which projects or the organization participates in
+├── members/
+│   ├── inactive/                  // Inactive members should still be kept on record
+│   ├── your-name-here.md          // Active members 
+│   └── your-friends-name.md
+├── decision-records/              // Complete documentation of decisions made
+│   ├── generalDR-001.md           // General decisions which merit everyone's attention,  
+│   ├── generalDR-002.md           //   or decisions which belong equally to multiple categories 
 │   ├── ...
-│   ├── ExampleCategory1/          // Decisions pertaining only-to, or primarily-to a specific category
-│   │    ├── DR_001.md
-│   │    ├── DR_002.md
+│   ├── example-category1/         // Decisions pertaining only-to, or primarily-to a specific category
+│   │    ├── DR-001.md
+│   │    ├── DR-002.md
 │   │    └── ...
-│   │── ExampleCategory2/
-│   │   ├── DR_001.md
-│   │   ├── DR_002.md
+│   │── example-category2/
+│   │   ├── DR-001.md
+│   │   ├── DR-002.md
 │   │   └── ...
 │   └── ... 
-└── Docs/                         // most docs should be referenced in Agreements.md
-    ├── Tutorials/                // tutorials on how to interact with 
-    ├── Contracts/
-    └── Policies/                    
-        └── CODE_OF_CONDUCT.md    // how users ought to interact with each other
+└── docs/                          // most docs should be referenced in Agreements.md
+    ├── tutorials/                 // tutorials on how to interact with 
+    ├── contracts/
+    └── policies/                     
+        └── CODE-OF-CONDUCT.md     // how users ought to interact with each other
 ```
 
 For specially permissioned actors inherent to github such as, the repository
