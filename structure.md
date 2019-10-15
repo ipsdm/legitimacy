@@ -13,6 +13,7 @@ subsections:
 Additionally, at the end of this file a discussion surrounding an example
 implementation on github is provided.
 
+
 ## Platform
 
 A variety of implementations of said structure should be considered based on
@@ -33,6 +34,7 @@ following are the requirements for any platform chosen:
  - verifiable voting, 
  - replicatability of all state.
 
+
 ## State
 
 An organization's state should be broken down approximately into the following
@@ -41,7 +43,7 @@ sections:
 ### Directives
 
 high-level directives of the organization. All agreements and decisions made
-should be able to be referenced within the context of the directives. 
+should be able to be referenced within the context of the directives.  
 
 ### Definitions
 
@@ -62,44 +64,58 @@ agreement into a state of [contention](./definitions.md#Contention).
 
 ### Decision Records
 
-Similar to an Architecture Decision Record (ADR), decision records provide
+Decision records document what, why, by who, any particular decision is made.
+In many organizational structures it is anticipated that many decisions will be
+made _outside_ of an organization-wide consensus process. Some organizations
+may choose to categorize kinds of decisions, and grant decision making
+privileges to certain members or sub-groups within the organization. The form
+by which decisions are permitted to be made must be documented and stated 
+within the organizations Agreements. 
 
-
+The suggested structure for contents of each decision record is the following:
  - Decision 
    - State the decision as concisely as possible. 
+   - By Authority Of
+     - State the members/agreements which legitimize this decision.
  - Justification
    - Provide a complete list of rational/justifications as to why this decision was
      made.  
  - Link
    - List references to other decisions records and agreements which form the
-     basis for this decision. This is especially important for indexing and
-     updating this decision when upstream agreements/decisions are modified or
-     overturned. 
+     basis for this decision. If new activities are formed as a part of this
+     decision, the activity should be linked here as well.  This is especially
+     important for indexing and updating this decision when upstream
+     agreements/decisions are modified or overturned. 
  - New Agreements Formed
   - List any new agreements formed during the ratification of this decision.
  - Supplementary Information
-  - Non-mandatory section which could include
-    - raw conversations/discussions
-    - voting records 
-    - external references
-    - etc.
-
-### Supplementary Information
-
-Non-mandatory section which could include
- - raw conversations/discussions
- - voting records 
- - external references
- - etc.
-
+ - Other non-mandatory sections:
+   - raw conversations/discussions
+   - voting records 
+   - external references
+   - etc.
 
 ### Activities 
-An activity is an ongoing responsibility within an organization. 
 
-ocumentation of on-going activities upheld by members 
+An activity is defined as an ongoing responsibility within an organization.  It
+is anticipated that most organizations will have ongoing processes which either
+do or do not consist of making formally documented decisions. If an activity
+involves making important decisions, those decisions should be documented and
+categorized through the same structure. Where activities do not involve making
+many formally documented decisions it is important that those activities be
+clearly documented in a special _Activties_ section of organization state. 
+
+All activities should _belong_ explicitly to a member of sub-group of members,
+whereby the responsible parties for engaging in that activity should be listed
+directly beside the activities definition, as well as in any relevant member
+cards. 
 
 
 ### Members
+
+Each member should maintain a "member-card" which document all core facets of
+how each particular member has and will engage with the organization. This
+should consist of an exhaustive list of members': 
    - Responsibilities
      - Desired Changes
    - Privileges
@@ -107,18 +123,27 @@ ocumentation of on-going activities upheld by members
    - Attributes
    - Achievements
 
+Modification of members cards must be done with the consent of that members,
+but should not exclusively controlled by that member. For instance, in most
+instantiations of legitimate structures it should be permissible to suggest
+changes to both your own card as well as others member cards. In either case
+a process of accepting amendments to member cards must be undertaken. 
+
 
 ## Process
+Implementing the suggested structure may prove to be difficult depending on
+what existing structures are in place. The goal of this section is to provide a
+comprehensive transition strategy from existing structures to the most
+legitimate structure conceivable. This transition period may take anywhere from
+a week to several years depending on the size of the organization.
 
 ### Phase 1: Assessment 
 
-Implementing the suggested structure may prove to be difficult depending
-on what existing structures are in place. During the initialization phase
-a utility should be mandated and populated in an attempt to reflect the 
-organizations existing structures _and not_ in an attempt to reflect the 
-most ideal form of the organization. This process enables the utility to 
-"get it's feet off the ground" such that further conversations can be had
-which mature the organization to a more ideal state. 
+During the initialization phase a utility should be mandated and populated in
+an attempt to reflect the organizations existing structures _and not_ in an
+attempt to reflect the most ideal form of the organization. This process
+enables the utility to "get it's feet off the ground" such that further
+conversations can be had which mature the organization to a more ideal state. 
 
 The following is the suggested initialization steps to be taken:
  1. Existing organization authority mandate the use of a single utility which
@@ -163,30 +188,59 @@ state of consensus for all the most recent document versions.
  
 ### Phase 2: Ratification
 
-Congratulations, you've made it to Phase 2. At this point you've agreed on 
-what the state of the organization looks like whether we like how it looks or not. 
-Before ratifying the structure voting powers should be initialized. The suggested voting
-power mechanism is as follows: 
+Congratulations, you've made it to Phase 2. At this point you've agreed on what
+the state of the organization looks like whether we like how it looks or not.
+Before ratifying the structure, voting powers should be initialized. This is
+especially important as it serves as the basis or legitimacy for old structures
+to be rectified.  It's recommended that the weights are independent for
+sub-categories of decision making within the organization. The suggested
+approach for determining the weight value for each member for each category is
+to "confidence-weight"-average all members suggested weights for all other
+members. Here the _confidence-weight_ refers to a non-weighted simple average
+of all members for all other members as to what their confidence is in that
+member to choose others weights. By having a confidence weight, leadership
+within an organization which has earned the respect may be granted exceptional
+privileges of more readily determining others decision making weights. 
+
+A generalized calculation for the aforementioned structure is as follows:
+
+```
+MemberX_confidence_weight = Sum(confidence_weights TO MemberX) 
+                            / Sum(confidence_weights) 
+MemberX_categoryY_weight  = Sum(confidence-weighted categoryY_weights TO MemberX) 
+                            / Sum(confidence-weighted category weights FOR categoryY) 
+```
+
+The suggested process for determining voting power is then as follows: 
  1. Existing leadership creates the initial list of decision making categories
  2. All members review and come to consensus on the category list, potentially 
     adding or changing categories during this step. 
  3. All members rank other members confidence in other members capabilities to 
     rank voting powers (meta voting power). When members feel unqualified 
-    to provide a ranking, ranking should simply not be provided. 
+    to provide a ranking, ranking should simply not be provided by that member.
  4. All members rank all other members on their suggested weights per voting 
     category where they feel confident to do so. 
+ 5. Decision making weights per category are weight-averaged and results 
+    made accessible. 
+ 6. Members of organization perform vote to ratify the new structure.
 
-### Phase 3: Rectification
+### Phase 3: Rectification and Continued Engagement
 
-Now that the existing structures have been successfully documented and any
-ratification blockers eradicated, it is time to rectify the organization.  
+Now that the existing structures have been successfully documented and
+ratified, it is time to rectify the organization. It is at this point that
+members should begin creating suggestions to the organizations through this new
+structure.  This will likely beginning with suggestions for decision making,
+and ways in which to modify the organizations processes. The sky is really the
+limit here.  
 
+During the initialization of this process its suggested that one of the first
+new agreements is to impose some form of queue and rate limit for all incoming
+suggestions to core-structure modification. This will help to prevent the
+scenario where there are too many suggestions to provide a useful level of focus 
+and critical feedback on each decision. 
 
-### Suggested further process
-
-The above suggested structure is a baseline structure which arbitrary further
-processes can be implemented within. Herein are further suggested processes which 
-will serve as a baseline 
+Beyond this initial rectification, the processes should continue to adapt to the 
+changing needs of the organization. Good luck! 
 
 
 ------------------------------------------------------

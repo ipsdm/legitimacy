@@ -23,6 +23,11 @@ legitimacy is described as follows:
 
 
 __________________________________________________
+o
+The above suggested structure is a baseline structure which arbitrary further
+processes can be implemented within. Herein are further suggested processes which 
+will serve as a baseline 
+__________________________________________________
 
 I agree, however i don't think we have a platform for even effectively
 expressing ourselves. You cant really hold an engaging discussion where

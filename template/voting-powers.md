@@ -8,18 +8,18 @@ the voting process may be considered by an organization as a viable second choic
 A basic suggested calculation for the voting process is a follows:
 
 ```
-MemberX_meta_weight = Sum(meta_weights TO MemberX) / Sum(meta_weights) 
-MemberX_categoryY_weight = Sum(meta_weights TO MemberX) / Sum(meta-weighted catergory weights FOR CategoryY) 
+MemberX_confidence_weight = Sum(confidence_weights TO MemberX) / Sum(confidence_weights) 
+MemberX_categoryY_weight = Sum(confidence-weighted categoryY_weights TO MemberX) / Sum(confidence-weighted category weights FOR categoryY) 
 ```
 
 ## Calculation Parameters
 
-| Name                | Value    | Description |
-| --------------------|:--------:|------------:|
-| Max Meta Weight     | 10       | Maximum allowable meta weight |
-| Max Category Weight | 100      | Maximum allowable category weight |
+| Name                  | Value    | Description |
+| ----------------------|:--------:|------------:|
+| Max Confidence Weight | 10       | Maximum allowable confidence weight |
+| Max Category Weight   | 100      | Maximum allowable category weight |
 
-## Meta Weights
+## Confidence Weights
 
 | From      | To         | Weight    | Comment  |
 | ----------|:----------:| ---------:|----------|  
