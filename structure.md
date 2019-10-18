@@ -117,9 +117,7 @@ Each member should maintain a "member-card" which document all core facets of
 how each particular member has and will engage with the organization. This
 should consist of an exhaustive list of members': 
    - Responsibilities
-     - Desired Changes
    - Privileges
-     - Desired Changes
    - Attributes
    - Achievements
    - Contracts
