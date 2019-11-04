@@ -134,7 +134,7 @@ Implementing the suggested structure may prove to be difficult depending on
 what existing structures are in place. The goal of this section is to provide a
 comprehensive transition strategy from existing structures to the most
 legitimate structure conceivable. This transition period may take anywhere from
-a week to several years depending on the size of the organization.
+a week to several years depending on the size and complexity of the organization.
 
 ### Phase 1: Assessment 
 
